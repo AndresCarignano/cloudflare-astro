@@ -25,6 +25,8 @@ export async function getStaticPaths() {
 // Get the current post's data
 const { post } = Astro.props;
 
+
+
 // Get all blog posts
 const blogPosts: CollectionEntry<"blog">[] = await getCollection(
   "blog",
@@ -42,6 +44,8 @@ const relatedPosts: CollectionEntry<"blog">[] = blogPosts.filter(
 );
 
 const pageTitle: string = `${post.data.title} | ${SITE.title}`;
+
+console.log(post.body)
 ---
 
 <MainLayout title={pageTitle}>
@@ -110,8 +114,10 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
             )
           )
         }
-      </div>
-      <div
+
+</div>
+{post.body}
+<div
         class="mx-auto grid max-w-screen-lg gap-y-5 sm:flex sm:items-center sm:justify-between sm:gap-y-0"
       >
         <!--Blog post tags-->
