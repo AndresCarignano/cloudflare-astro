@@ -77,7 +77,7 @@ const blogCollection = defineCollection({
   }),
 });
 
-const insightsCollection = defineCollection({
+const cursosCollection = defineCollection({
   type: "content",
   schema: ({ image }) => z.object ({
   title: z.string(),
@@ -92,5 +92,5 @@ export const collections = {
   docs: defineCollection({ schema: docsSchema() }),
   'products': productsCollection,
   'blog': blogCollection,
-  'insights': insightsCollection,
+  'cursos': cursosCollection,
 };

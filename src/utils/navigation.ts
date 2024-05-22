@@ -4,26 +4,17 @@ const navBarLinks = [
   // { name: "Productos", url: "/products" },
   // { name: "Servicios", url: "/services" },
   // { name: "Blog", url: "/blog" },
-  { name: "Mano a Mano con el Tarot", url: "/mano-a-mano" },
+  { name: "Mano a Mano con el Tarot", url: "/cursos/mano-a-mano" },
   // { name: "Contacto", url: "/contact" },
 ];
 // An array of links for footer
 const footerLinks = [
-  {
-    section: "Ecosystem",
+    {
+    section: "Sobre Paz",
     links: [
-      { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
-    ],
-  },
-  {
-    section: "Company",
-    links: [
-      { name: "About us", url: "#" },
+      { name: "Sobre nosotras", url: "/about" },
+      { name: "Cursos", url: "/cursos" },
       { name: "Blog", url: "/blog" },
-      { name: "Careers", url: "#" },
-      { name: "Customers", url: "#" },
     ],
   },
 ];
