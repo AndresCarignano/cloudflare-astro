@@ -19,8 +19,8 @@ const blogPosts: CollectionEntry<"blog">[] = englishBlogEntries.sort(
     b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 // Get all insights posts
-const insightPosts: CollectionEntry<"insights">[] =
-  await getCollection("insights");
+const insightPosts: CollectionEntry<"cursos">[] =
+  await getCollection("cursos");
 
 // Separate the most recent post from others
 const mostRecentPost: CollectionEntry<"blog"> = blogPosts[0];
